@@ -1,0 +1,212 @@
+body{
+    width: 100%;
+}
+
+nav{
+ z-index: -1;
+}
+.nav-list-logo{
+    display: none;
+}
+.mobile-nav-info{
+    display: block;
+    position: absolute;
+    z-index: 7;
+    width: 100%;
+}
+.nav-mobile-logo{
+    position: relative;
+    display: block;
+}
+.nav-logo{
+    position: absolute;
+    z-index: 5;
+    width: 32%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.5s;
+    align-items: center;
+    left: 300px;
+    top: 10px;
+}
+.nav-logo img{
+    max-width: 35%;
+}
+.nav-logo h2{
+    font-size: 20px;
+}
+#logo-name{
+    width: 30%;
+}
+.mobile-nav-list{
+    width: 100%;
+    height: 0px;
+    background-color: rgb(26, 26, 26);
+
+}
+.nav-h3{
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.nav-h3 h3{
+    color: white;
+    font-size: 26px;
+    font-weight: 100;
+    cursor: pointer;
+}
+.nav-icon{
+    width: 98%;
+    height: 50px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+}
+.nav-icon .fa-bars{
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    
+}
+.nav-icon .fa-xmark{
+    font-size: 27px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    display: none;
+}
+.nav-images-info{
+    height: 580px;
+}
+.bios{
+    height: 900px;
+}
+.follow{
+    height: 400px;
+}
+.follow-link-info{
+    height: 400px;
+}
+/* GALLERY*/
+.gallery-image-info{
+    height: 550px;
+}
+.gallery-image{
+    height: 550px;
+}
+.gallery-bg{
+    height: 580px;
+}
+.gallery-text-info{
+    display: flex;
+    justify-content: unset;
+    
+}
+.gallery-text{
+    height: 100px;
+    flex-direction: column;
+}
+.gallery-text h3{
+    cursor: pointer;
+}
+.column {
+    flex: 50%;
+    max-width: 40%;
+    padding: 0 4px;
+}
+
+/* rates */
+.rates{
+    height: 3690px;
+}
+.rate-image-text{
+    border: solid red 2px;
+   left: 0px;
+    top: 300px;
+    width: 100%;
+    text-align: center;
+}
+.rate-image-text h3{
+    margin: 0px;
+}
+.rate-image-info{
+    width: 100%;
+    height: 560px;
+}
+.rate-image{
+    height: 540px;
+}
+.studio-list-info{
+    
+    height: 1200px;
+}
+.outdoor-list-info{
+    height: 1200px;
+}
+.basic-list-text{
+    padding: 20px;
+}
+.basic-list-text h3{
+    font-size: 25px;
+
+}
+.basic-text h4{
+    font-size: 20px;
+}
+.standard-list-text{
+    width: 40%;
+    padding: 20px;
+}
+.standard-list-text h3{
+    font-size: 25px;
+
+}
+.standard-text h4{
+    font-size: 20px;
+}
+.makeup-list-image{
+    width: 67%;
+}
+.makeup-imp{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.makeup-list{
+    flex-direction: column;
+    height: 400px;
+    width: 90%;
+}
+.makeup-mobile-text{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.makeup-text{
+    width: 75%;
+    height: 270px;
+}
+.makeup-text h4{
+    font-size: 20px;
+    margin: 20px;
+}
+/*CONTACT*/
+.phone-num{
+    text-align: center;
+}
+.links{
+    width: 50%;
+    margin-top: 20px;
+}
+.links h3{
+    text-align: center;
+}
