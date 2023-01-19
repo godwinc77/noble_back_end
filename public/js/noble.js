@@ -544,9 +544,9 @@ const square2 = document.getElementsByClassName("square")[1]
 const square3 = document.getElementsByClassName("square")[2]
 const square4 = document.getElementsByClassName("square")[3]
 const screen = document.getElementById("screen")
-const cancel = document.getElementsByClassName("cancel")[0]
 const booking_profile = document.getElementsByClassName("booking-profile")[0]
 const select_submit = document.getElementsByClassName("select-submit")[0]
+const cancel_book = document.getElementsByClassName("cancel")[1]
 
 
 function openpackage(){
@@ -626,7 +626,7 @@ select2.addEventListener("click",selectsession2)
 select3.addEventListener("click",selectsession3)
 select4.addEventListener("click",selectsession4)
 select_submit.addEventListener("click",openprofile)
-cancel.addEventListener("click",closeprofile)
+cancel_book.addEventListener("click",closeprofile)
 
 // about //
 

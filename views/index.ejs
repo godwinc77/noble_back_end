@@ -595,11 +595,11 @@
                             <div class="booking-text-list">
                                 <div class="booking-text">
                                     <h3>NAME</h3>
-                                    <input type="text">
+                                    <input type="text" class="booking-type" name="firstname">
                                 </div>
                                 <div class="booking-text">
                                     <h3>PHONE NUMBER</h3>
-                                    <input type="tel">
+                                    <input type="tel" class="booking-type" name="phonenumber">
                                 </div>
                             </div>
                         </div>
@@ -703,10 +703,10 @@
                                     </div>
                                     <div class="booking-date-message">
                                         <h3>MESSAGE</h3>
-                                        <input id="message" type="text">
+                                        <input id="message" type="text" class="booking-type" name="message">
                                     </div>
                                     <div class="select-submit">
-                                        <input type="submit" value="SUBMIT" >
+                                        <input id="booking-submit" type="submit" value="SUBMIT" >
                                     </div>
                                     <div id="screen">
                                         <h5>SELECT A SESSION FIRST</h5>
@@ -805,11 +805,11 @@
                         <div class="profile-name-info">
                             <div class="profile-name">
                                 <h2>NAME</h2>
-                                <h3>CHRIS CADILLAC</h3>
+                                <p><%=  data.name %></p>
                             </div>
                             <div class="profile-name">
                                 <h2>PHONE NUMBER</h2>
-                                <h3>08067089851</h3>
+                                <p><%= data.phonenumber %></p>
                             </div>
                         </div>
                         <div class="profile-package">
@@ -835,7 +835,7 @@
                                 </div>
                             </div>
                             <div class="profile-message">
-                                <h3>Hello i booked a shoot earlier today</h3>
+                                <p><% data.message %></p>
                             </div>
                         </div>
                         <div class="profile-submit">
@@ -843,7 +843,7 @@
                         </div>
                     </div>
                 <div class="cancel">
-                    <i class="fa-solid fa-x"></i>
+                    <i bookng-cancel class="fa-solid fa-x"></i>
                 </div>
             </div>
         </section>
@@ -907,6 +907,8 @@
         </footer>
         <script src="js/noble.js" ></script>
         <script src="js/nobleipad.js" ></script>
+        <script src="js/nobleauth.js"></script>
+      
         
 
     </body>
