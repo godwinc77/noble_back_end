@@ -1131,7 +1131,7 @@ nav{
     font-size: 16px;
     color: white;
 }
-.profile-name h3{
+.profile-name p{
     margin-top: 0px;
     font-size: 21px;
     color: white;
@@ -1186,7 +1186,7 @@ nav{
     font-size: 18px;
     color: white;
 }
-.profile-message h3{
+.profile-message p{
     width: 100%;
     background-color: white;
     border-radius: 7px;

@@ -38,19 +38,24 @@ var bookingdetailSchma = mongoose.Schema({
     message: String,
 })
     var bookingdetail = mongoose.model("bookingdetail", bookingdetailSchma)
-app.get('/', function(req, res){
-    res.render('index')
+app.get('/', function(req,res,){
+    var data = req.body  
+    
+    res.render('index',{data:data})
 })
 
 app.post("/bookingdet", async function(req,res){
-    var data = req.body
-    var bookingdet = bookingdetail({
-        name: data.name,
-        number: data.phonenumber,
-        message: data.message
+    var bookingdet = req.body
+
+    console.log(bookingdet)
+    var bookingupdate = new bookingdetail({
+        name: bookingdet.name,
+        phonenumber: bookingdet.phonenumber,
+        message: bookingdet.message
     })
-    bookingdet.save()
-    res.render("bookingdet",{data:data,})
+    console.log(bookingdet.name)
+    console.log(bookingupdate)
+    bookingupdate.save()
     res.send("booking sucessfull")
    
 })

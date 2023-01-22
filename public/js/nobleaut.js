@@ -11,7 +11,7 @@ async function submit_booking_type(){
         body: data
     })
     var response = await request.text()
-    alert(response)
+    console.log(response)
 }
 
-booking_submit .addEventListener("click", submit_booking_type)
+booking_submit.addEventListener("click", submit_booking_type)

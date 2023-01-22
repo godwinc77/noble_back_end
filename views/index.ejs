@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noble</title>
+    <title>res.render() Noble</title>
     
     <link rel="stylesheet" href="css/noble.css">
     <link rel="shortcut icon" href="img/b1.png" type="image/x-icon">
@@ -595,7 +595,7 @@
                             <div class="booking-text-list">
                                 <div class="booking-text">
                                     <h3>NAME</h3>
-                                    <input type="text" class="booking-type" name="firstname">
+                                    <input id="name" type="text" class="booking-type" name="name">
                                 </div>
                                 <div class="booking-text">
                                     <h3>PHONE NUMBER</h3>
@@ -805,7 +805,7 @@
                         <div class="profile-name-info">
                             <div class="profile-name">
                                 <h2>NAME</h2>
-                                <p><%=  data.name %></p>
+                                <p><%= data.name %></p>
                             </div>
                             <div class="profile-name">
                                 <h2>PHONE NUMBER</h2>
@@ -835,7 +835,7 @@
                                 </div>
                             </div>
                             <div class="profile-message">
-                                <p><% data.message %></p>
+                                <p><%= data.message %></p>
                             </div>
                         </div>
                         <div class="profile-submit">
@@ -907,7 +907,7 @@
         </footer>
         <script src="js/noble.js" ></script>
         <script src="js/nobleipad.js" ></script>
-        <script src="js/nobleauth.js"></script>
+        <script src="js/nobleaut.js"></script>
       
         
 
